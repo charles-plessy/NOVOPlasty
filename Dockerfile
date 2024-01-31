@@ -19,4 +19,6 @@ RUN sed 's/\r//' /usr/share/doc/NOVOPlasty/NOVOPlasty4.3.4.pl > /usr/bin/NOVOPla
 # Export for singulrity, build and run.
 # podman save -o NOVOPlasty.tar novoplasty
 # singularity build --fakeroot NOVOPlasty.sif docker-archive://NOVOPlasty.tar
-# ./NOVOPlasty.sif NOVOPlasty -c config.txt  
+# ./NOVOPlasty.sif NOVOPlasty -c config.txt
+
+# singularity pull docker://ghcr.io/charles-plessy/novoplasty:latest
